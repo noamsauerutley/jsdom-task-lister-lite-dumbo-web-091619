@@ -7,6 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let li = document.createElement("li")
     li.appendChild(document.createTextNode(newTask))
     ul.appendChild(li)
+    li.addEventListener("click", function(){
+      li.remove()
+    })
     event.preventDefault()
   })
   
